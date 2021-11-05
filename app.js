@@ -37,11 +37,11 @@ app.post("/", (req, res) => {
   var jsonData = JSON.stringify(data);
 
 //url for all post requests
-  const url = "https://us20.api.mailchimp.com/3.0/lists/62db71e502"
+  const url = "https://us20.api.mailchimp.com/3.0/lists/{ListIDGoesHere}"
 
   const options = {
     method: "POST",
-    auth: "christianbonte:70fd3f25f0118ac37d74c45979ce5583-us20"
+    auth: "christianbonte:{API key goes here}"
   }
 
 //request to send members to mailcchimp
@@ -68,9 +68,3 @@ request.end();
 app.listen(port, () => {
   console.log("Running on port " + port);
 });
-
-//Mailchimp API key
-//70fd3f25f0118ac37d74c45979ce5583-us20
-
-//Mailchimp List ID
-//62db71e502
