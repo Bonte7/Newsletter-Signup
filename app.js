@@ -35,7 +35,8 @@ app.post("/", (req, res) => {
 
 //converting the data variable from JavaScript to JSON
   var jsonData = JSON.stringify(data);
-
+  
+/*All following API keys have been removed for account secuirty purposes*/
 //url for all post requests
   const url = "https://us20.api.mailchimp.com/3.0/lists/{ListIDGoesHere}"
 
